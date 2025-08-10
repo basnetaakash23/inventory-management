@@ -32,7 +32,7 @@ public class Item {
     private int stock;
 
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
-    @JoinColumn(name = "location_id", nullable = false,
+    @JoinColumn(name = "location_id",
             foreignKey = @ForeignKey(name = "fk_item_location"))
     private Location location;
 }
